@@ -9,3 +9,27 @@
     width: 100%;
     height: 100%;
 }
+
+.ratio16_9 {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.ratio16_9>.ratio__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ratio8_9 {
+    width: 100%;
+    padding-bottom: 114.5%;
+    position: relative;
+}
+
+.ratio8_9>.ratio__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

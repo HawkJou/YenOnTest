@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/index__cover.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/player.css">
     <link rel="stylesheet" type="text/css" href="css/hidden.css">
     <link rel="stylesheet" type="text/css" href="css/ratio.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -55,9 +56,6 @@
             </div>
         </section>
         <section>
-            <style>
-
-            </style>
             <!-- cards -->
             <div class="container">
                 <div class="row">
@@ -115,13 +113,36 @@
             </div>
         </section>
         <section>
+
             <!-- video player -->
             <div class="container">
                 <div class="row">
-                    <div class="col-phone-100 col-tablet-67" style="height: 300px;background-color:pink;"></div>
-                    <div class="col-phone-100 col-tablet-33" style="height: 300px;background-color:green;"></div>
+                    <div class="col-phone-100 col-tablet-67">
+                        <div class="video__player">
+                            <div class="ratio16_9">
+                                <iframe id="video__player" class="ratio__content"
+                                    src="https://www.youtube-nocookie.com/embed/zfCUtLdUYd8" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-phone-100 col-tablet-33">
+                        <div class="video__list__container mdl-shadow--2dp">
+                            <div class="ratio8_9">
+                                <ul class="ratio__content video__list ">
+                                    <li class="_video" data-video="zfCUtLdUYd8">Figma設計體驗營（上）：基本介面 / Frames</li>
+                                    <li class="_video" data-video="qltgqrKJT7o">Figma設計體驗營（中）：Auto Layout / Components
+                                    </li>
+                                    <li class="_video" data-video="3YICmzX9ywk">Figma設計體驗營（下）：Prototype / Plugins / 自介小卡
+                                    </li>
+                                    <li class="_video" data-video="kL5mVSh6rQE">API是什麼，可以吃嗎？</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </section>
         <section>
             <!-- image links -->
@@ -197,6 +218,13 @@
     </footer>
     <script>
         $(function () {
+            // video player init
+            $("._video").click(function () {
+                var video = $(this).data("video");
+                var url = "https://www.youtube-nocookie.com/embed/" + video;
+                $("#video__player").attr('src', url);
+            })
+            // nav init
             $(".nav__button").click(function () {
                 $(".nav__list").slideToggle(300);
             })
