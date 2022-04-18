@@ -1,0 +1,62 @@
+.mdl-shadow--2dp {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1 px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.card {
+    border: 2px solid silver;
+    margin: 8px;
+    border-radius: 12px;
+}
+
+.card .card__image img {
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
+    border-radius: 12px 12px 0 0;
+}
+
+.card .card__content {
+    padding: 8px;
+}
+
+.card .card__content .card__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: brown;
+
+}
+
+.card .card__content .card__detail {
+    font-size: 16px;
+    line-height: 1.5em;
+    height: 6em;
+    overflow-y: hidden;
+
+}
+
+.card .card__action {
+    display: table;
+    width: 100%;
+}
+
+.card .card__action>.action__content {
+    display: table-cell;
+    padding: 8px;
+}
+
+.card .card__action>.action__content>._link {
+    float: right;
+    margin-right: 12px;
+}
+
+.card .card__action>.action__content .btn {
+    margin: 0 8px;
+    padding: 8px 20px;
+    border-radius: 12px;
+    background: transparent;
+    border: none;
+}
+
+.card .card__action>.action__content .btn:hover,
+.card .card__action>.action__content .btn:active {
+    background: rgba(0, 0, 0, 0.08);
+}
