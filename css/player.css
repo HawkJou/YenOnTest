@@ -6,6 +6,7 @@
     margin: 8px;
     border-radius: 8px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 ul.video__list {
@@ -30,5 +31,6 @@ ul.video__list ._video {
     .video__list__container .ratio8_9>.ratio__content {
         position: static;
         height: auto;
+
     }
 }

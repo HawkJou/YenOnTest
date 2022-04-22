@@ -1,0 +1,47 @@
+footer {
+    background-color: #242424;
+}
+
+footer ._container {
+    margin: 56px 0;
+}
+
+footer ._container._center {
+    text-align: center;
+}
+
+
+ul.footer__links {
+    /* list-style: none; */
+    color: white;
+    text-align: left;
+}
+
+ul.footer__links>li {
+    padding: 8px;
+}
+
+footer .fa-brands {
+    color: #fff;
+    text-align: center;
+    background-color: grey;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    margin-top: 32px;
+}
+
+@media (max-width: 767px) {
+    footer .container {
+        margin: 24px 0;
+    }
+
+    ul.footer__links {
+        text-align: center;
+    }
+
+    footer .fa-brands {
+        margin: 0px;
+    }
+}
